@@ -107,7 +107,7 @@ footer{
   position:fixed;
   text-align: center;
   z-index: 1;
-  bottom:3px;
+  bottom:0px;
   width:100%;
   background-color: rgb(194, 255, 255);
 }
@@ -154,7 +154,7 @@ p,ul{
 }
 #home-mid{
   position: relative;
-  top:70px;
+  top:50px;
   left:30px;
   min-height: calc(100vh - 95px);
 }
@@ -168,13 +168,13 @@ p,ul{
   position: relative;
   top:120px; 
   left:30px;
-  min-height: 150vh;
+  min-height: 180vh;
 }
 #gallery-imgs{
   position: relative;
   top:60px; 
   left:60px;
-  min-height: 130vh;
+  min-height: 150vh;
 }
 #rev-mid,#ser-mid{
   position: relative;
