@@ -1,0 +1,57 @@
+html 
+html 
+    head
+         link(rel="stylesheet", href="C:/Users/preet/react_node/client/src/App.css")
+    <body style="background-color: rgb(194, 255, 255);">
+        <div class="header">
+        h1 
+                    label(for="eventzen") EventZen
+        p 
+            label(for="info") You can register for multiple events as long as they don't overlap.
+            br
+            label(for="infocont") Each event has different pricing and eligibility, check the event details before registering for an event.
+        h2
+            label(for="reg") Registration form:
+        form(action="/form",method="POST")
+            <fieldset style="display: inline;  background-color: rgb(133, 228, 249);  width:10px;"> 
+                <div id="reg-mid">
+                    div 
+                        input(type="text" name="fname" id="fname" value="" placeholder="First Name" required)
+                    br
+                    div 
+                        input(type="text" name="lname" id="lname" value="" placeholder="Last Name" required)
+                    br    
+                    div 
+                        input(type="text" name="srn" id="srn" value="" placeholder="SRN" pattern="PES+[1 2]+UG[1 2]+[8 9 0 1 2]+[CS EC EE BT ME]+[0-9]{3}" required)
+                    br
+                    div 
+                        input(type="email" name="email" id="email" value="" placeholder="Email" pattern="[0-9 A-Z a-z _ . @]+[.edu .org .com]"  required)
+                    br
+                    div
+                        input(type="tel" name="number" id="number" value="" placeholder="Mobile Number" pattern="[0-9]{10}" maximum=10 required)
+                    br
+                    
+                    div
+                        label(for="dob") Date Of Birth:
+                        input(type="date" name="dob" id="dob" value="dob" placeholder="" required)
+                    br
+                    br
+                    div 
+                        label(for="checkbox") Choose the event/s:
+                    br
+                    div 
+                        input(type="checkbox" name="events" id="events" value="codewars")
+                        label(for=codewars) CodeWars
+                    div 
+                        input(type="checkbox" name="events" id="events" value="consolejam")
+                        label(for=consolejam) Console Jam
+                    div 
+                        input(type="checkbox" name="events" id="events" value="hardwired")
+                        label(for=hardwired) Hardwired
+                    br
+                    div
+                    button(type="submit") Submit
+                    br
+                    br
+                    button(type="reset") Reset
+                </div>
