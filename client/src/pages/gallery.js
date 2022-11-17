@@ -1,6 +1,6 @@
 import React from "react";
 
-var srcs=["gal1.jpg","gal2.jpg","gal3.jpg","gal4.jpg","gal5.jpg"]
+var srcs=["gal1.jpg","gal2.jpg","gal3.jpg","gal4.jpg","gal5.jpg","gal6.jpg","gal7.jpeg","gal8.jpeg"]
 class Mid extends React.Component{
     render(){
         var img_set=[]
