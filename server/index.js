@@ -27,8 +27,23 @@ app.post('/form',function(req,res)
             if(err) throw err
             db.close()
         })
+    })
 })
-    
+
+app.post('/review',(req,res)=>{
+    console.log("post")
+    var forms={name:req.body.name,comment:req.body.comment}
+    console.log(forms)
+    console.log("Form submitted")
+    res.json(req.body)
+    MongoClient.connect(url_db,function(err,db){
+        if(err)throw err
+            var dbo=db.db("form")
+        dbo.collection("review").insertOne(req.body,function(err,res){
+            if(err) throw err
+            db.close()
+            })
+        })  
 })
 app.listen(PORT,()=>{
     console.log(`server listening on http://localhost:${PORT}`)
