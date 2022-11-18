@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 var arr=['about.html','search.html','calender.html','gallery.html','contacts.html','review.html']
         var nam=["About","Search","Calender","Gallery","Contacts","Review"]
-        var det=['About Console Jam','Hey ethletes out there!',"This even is exclusively for y'all. Show off your gaming skills in this event.","vlsi-reg",'http://localhost:3001/formm','Prize Details:',"First prize: Rs.3000/-","Second Prize: Rs.2000/-","Third Prize: Rs.1000/-","Participation certificates and exciting goodies for all participants.","Eligibility","Any B.Tech pursuing student can participate in the event(Any year or branch).","Requirements","There is no requirements for this event."," Just come and have fun!!!"]
+        var det=['About Console Jam','Hey ethletes out there!',"This even is exclusively for y'all. Show off your gaming skills in this event.","vlsi-reg",'http://localhost:3001/register','Prize Details:',"First prize: Rs.3000/-","Second Prize: Rs.2000/-","Third Prize: Rs.1000/-","Participation certificates and exciting goodies for all participants.","Eligibility","Any B.Tech pursuing student can participate in the event(Any year or branch).","Requirements","There is no requirements for this event."," Just come and have fun!!!"]
         class Button extends React.Component{
             redirect=(i)=>{
                 document.location=this.props.links[i]

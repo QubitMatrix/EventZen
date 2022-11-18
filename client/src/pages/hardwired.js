@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 var arr=['about.html','search.html','calender.html','gallery.html','contacts.html','review.html']
         var nam=["About","Search","Calender","Gallery","Contacts","Review"]
-        var det=['About Hardwired','Do you see bread boards and multicolor wires and get excited to build new stuff? Then this is an event for you!!!',"vlsi-reg",'http://localhost:3001/formm','Prize Details:',"First prize: Rs.3000/-","Second Prize: Rs.2000/-","Third Prize: Rs.1000/-","Participation certificates and exciting goodies for all participants.","Eligibility","Any B.Tech pursuing student can participate in the event(Any year or branch).","The participant should have a knack for circuit designing and should know atleast basic electronics","Requirements","Basic electronics knowledge","Team size of 3-5"]
+        var det=['About Hardwired','Do you see bread boards and multicolor wires and get excited to build new stuff? Then this is an event for you!!!',"vlsi-reg",'http://localhost:3001/register','Prize Details:',"First prize: Rs.3000/-","Second Prize: Rs.2000/-","Third Prize: Rs.1000/-","Participation certificates and exciting goodies for all participants.","Eligibility","Any B.Tech pursuing student can participate in the event(Any year or branch).","The participant should have a knack for circuit designing and should know atleast basic electronics","Requirements","Basic electronics knowledge","Team size of 3-5"]
         class Button extends React.Component{
             redirect=(i)=>{
                 document.location=this.props.links[i]

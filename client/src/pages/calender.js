@@ -5,13 +5,13 @@ class Mid extends React.Component{
         return(<div id="cal-mid"><h2>Events Schedule</h2>
         <ul>
             <li>
-            The events of EventZen will be spanning over two days(9am to 5pm), make sure the events that you register for do not overlap.
+            The events of EventZen will be spanning over two days(9am to 5pm).<br></br> Make sure the events that you register for do not overlap.
         
             </li>
         </ul>
         <h3>Schedule of events for 18th November:</h3>
         <table width="60%">
-        <tr>
+        <tr class="heading">
             <th>Time</th>
             <th>Events</th>
         </tr>
@@ -56,7 +56,7 @@ class Mid extends React.Component{
     </table>
     <h3>Schedule of events for 19th November:</h3>
     <table width="60%">
-        <tr>
+        <tr class="heading">
             <th>Time</th>
             <th>Events</th>
         </tr>

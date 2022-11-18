@@ -42,10 +42,11 @@ var url_db="mongodb://localhost:27017"
                 setInputs(values=>({...values,[name]:value}))
             }
             const handleSubmit=(e)=>{
-                e.preventDefault();
                 document.write(inputs)
+                alert("Form submitted")
+                e.preventDefault();
                 console.log(inputs,typeof(inputs),inputs.fname,typeof(inputs.fname));
-                return fetch('localhost:3000/register',{
+                return fetch('localhost:3001/formm',{
                     method:'GET',
                     body:JSON.stringify(inputs),
                     headers:{
