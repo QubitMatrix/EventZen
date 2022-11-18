@@ -8,8 +8,8 @@ var MongoClient=require('mongodb').MongoClient
 app.get("/api",(req,res)=>{
     res.send({message:"hello"})
 })
-app.get("/formm",(req,res)=>{
-    res.render('form',{msg:"submitted"})//res.json({message:"hello server"})
+app.get("/register",(req,res)=>{
+    res.render('form')//res.json({message:"hello server"})
 })
 app.set('view engine','pug')
 app.set('views','./views')
