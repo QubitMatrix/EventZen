@@ -7,14 +7,14 @@ import {Link as StyledLink} from 'react-router-dom'
 import Codewars from './pages/codewars';
 import Hardwired from './pages/hardwired';
 import Consolejam from './pages/consolejam';
-import Register from './pages/register';
+//import Register from './pages/register';
 import Calender from './pages/calender';
 import Gallery from './pages/gallery';
 import Review from './pages/review';
 import Reviews from './pages/review';
 //import Search from './pages/search';
 function App() {
-    var arr=['about','search','calender','gallery','contacts','review','http://localhost:3001/formm']
+    var arr=['about','search','calender','gallery','contacts','review','http://localhost:3001/register']
     var nam=["About","Search","Calender","Gallery","Contacts","Review","Register"]
     var events=[["code-event","/codewars","codeimg","code.webp","CodeWars poster","Codewars"],["vlsi-event","/hardwired","vlsiimg","vlsi.jpg","Hardwired poster","Hardwired"],["gaming-event","/Consolejam","gamingimg","game.jpg","Console Jam poster","Console Jame"]]
     class Button extends React.Component{
@@ -22,7 +22,7 @@ function App() {
             var button_set=[]
             for(let i=0;i<arr.length-1;i++)
             button_set.push(<StyledLink className={'button'} to={this.props.links[i]}><span>{this.props.names[i]}</span></StyledLink>)
-            button_set.push(<button className={'button'} onClick={()=>document.location="http://localhost:3001/formm"}>Register</button>)
+            button_set.push(<button className={'button'} onClick={()=>document.location="http://localhost:3001/register"}>Register</button>)
             return(<div id="button-div">{button_set}</div>)
         }
     }
@@ -83,7 +83,6 @@ function App() {
             <Route path='/codewars' element={<Codewars/>}/>
             <Route path='/hardwired' element={<Hardwired/>}/>
             <Route path='/consolejam' element={<Consolejam/>}/>
-            <Route path='/register' element={<Register/>}/>
             <Route path='/calender' element={<Calender/>}/>            
             <Route path='/gallery' element={<Gallery/>}/>
             <Route path='/review' element={<Reviews/>}/>

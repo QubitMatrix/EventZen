@@ -186,6 +186,9 @@ p,ul{
   left:30px;
   min-height: 180vh;
 }
+.heading{
+  background-color: #78dcf8;
+}
 #rev-mid{
   position: relative;
   top:120px; 
