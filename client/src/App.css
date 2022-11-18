@@ -84,6 +84,22 @@ fieldset{
   margin-left:10px;
   margin-right:10px;
 }
+.button_rev{
+  background-color: rgb(0, 221, 255);
+  border-radius: 30px;
+  padding:10px;
+  margin-left:10px;
+  margin-right:10px;
+  text-decoration: none;
+}
+.button_rev:hover{
+  height: 50px;
+  background-color: rgb(109, 248, 255);
+  border-radius: 30px;
+  padding:10px;
+  margin-left:10px;
+  margin-right:10px;
+}
 
 #button-div{
   position:relative;
@@ -169,6 +185,12 @@ p,ul{
   top:120px; 
   left:30px;
   min-height: 180vh;
+}
+#rev-mid{
+  position: relative;
+  top:120px; 
+  left:30px;
+  min-height: 60vh;
 }
 #gallery-imgs{
   position: relative;
