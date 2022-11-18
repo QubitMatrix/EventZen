@@ -12,7 +12,8 @@ html
             label(for="infocont") Each event has different pricing and eligibility, check the event details before registering for an event.
         h2
             label(for="reg") Registration form:
-        form(action="/form",method="POST")
+        iframe(src="http://localhost:3000",name="content",style="display:none;")
+        form(action="/form",method="POST",target="content")
             <fieldset style="display: inline;  background-color: rgb(133, 228, 249);  width:10px;"> 
                 <div id="reg-mid">
                     div 
