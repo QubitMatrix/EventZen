@@ -10,7 +10,8 @@ import Consolejam from './pages/consolejam';
 import Register from './pages/register';
 import Calender from './pages/calender';
 import Gallery from './pages/gallery';
-//import Review from './pages/review';
+import Review from './pages/review';
+import Reviews from './pages/review';
 //import Search from './pages/search';
 function App() {
     var arr=['about','search','calender','gallery','contacts','review','http://localhost:3001/formm']
@@ -83,8 +84,9 @@ function App() {
             <Route path='/hardwired' element={<Hardwired/>}/>
             <Route path='/consolejam' element={<Consolejam/>}/>
             <Route path='/register' element={<Register/>}/>
-            <Route path='/calender' element={<Calender/>}/>
+            <Route path='/calender' element={<Calender/>}/>            
             <Route path='/gallery' element={<Gallery/>}/>
+            <Route path='/review' element={<Reviews/>}/>
             </Routes>
          </Router>
          </div>)
