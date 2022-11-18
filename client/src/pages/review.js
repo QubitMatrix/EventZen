@@ -52,7 +52,8 @@ class Details extends React.Component{
     render(){
       return(
       <div>
-      <form action='http://localhost:3001/review' method='POST'>
+        <iframe title="rev" name="content" style={{display:"none"}}></iframe>
+  <form action='http://localhost:3001/review' method='POST' target="content">
           <fieldset className="info">
           <legend> NAME:</legend> 
           <input type="text" name="name"  ref={(a) => this.ele = a}></input>
@@ -76,7 +77,7 @@ class Details extends React.Component{
 class Reviews extends React.Component{
     render(){
         return(
-            <div id="rev-mid">
+          <div id="rev-mid">
                 <Details/>
             </div>
         )
