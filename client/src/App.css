@@ -186,6 +186,33 @@ p,ul{
   left:30px;
   min-height: 180vh;
 }
+#con1{
+  position:relative;
+  top:-10px;
+  left:180px;
+  display: inline-block;
+text-align: center;
+}
+#con2{
+  position:relative;
+  top:-10px;
+  left:290px;
+  display: inline-block;
+text-align: center;
+}
+#con3{
+  position:relative;
+  top:-10px;
+  left:400px;
+  display: inline-block;
+text-align: center;
+}
+#con-mid{
+  position: relative;
+  top:120px; 
+  left:30px;
+  
+}
 .heading{
   background-color: #78dcf8;
 }

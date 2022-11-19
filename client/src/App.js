@@ -12,7 +12,8 @@ import Calender from './pages/calender';
 import Gallery from './pages/gallery';
 import Review from './pages/review';
 import Reviews from './pages/review';
-//import Search from './pages/search';
+import Search from './pages/search';
+import Contact from './pages/contacts';
 function App() {
     var arr=['about','search','calender','gallery','contacts','review','http://localhost:3001/register']
     var nam=["About","Search","Calender","Gallery","Contacts","Review","Register"]
@@ -83,8 +84,10 @@ function App() {
             <Route path='/codewars' element={<Codewars/>}/>
             <Route path='/hardwired' element={<Hardwired/>}/>
             <Route path='/consolejam' element={<Consolejam/>}/>
-            <Route path='/calender' element={<Calender/>}/>            
+            <Route path='/calender' element={<Calender/>}/>     
+            <Route path="/contacts" element={<Contact/>}/>       
             <Route path='/gallery' element={<Gallery/>}/>
+            <Route path='/search' element={<Search/>}/>
             <Route path='/review' element={<Reviews/>}/>
             </Routes>
          </Router>
