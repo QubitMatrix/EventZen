@@ -45,6 +45,20 @@ app.post('/review',(req,res)=>{
             })
         })  
 })
+app.get('/review',(req,res)=>{
+    console.log("in get")
+    MongoClient.connect(url_db,function(err,db){
+      if (err) throw err;
+      var dbo=db.db("form");
+      dbo.collection("review").find({},{projection:{_id:0}}).toArray(function(err,result){
+          if(err) throw err;
+          console.log(result)
+          if(result!=null)
+            {res.json(result)}
+          db.close()
+  })
+  })
+  })
 app.listen(PORT,()=>{
     console.log(`server listening on http://localhost:${PORT}`)
 })
