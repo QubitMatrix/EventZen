@@ -86,7 +86,7 @@ fieldset{
 }
 .button_rev{
   background-color: rgb(0, 221, 255);
-  border-radius: 30px;
+  border-radius: 15px;
   padding:10px;
   margin-left:10px;
   margin-right:10px;
@@ -95,7 +95,7 @@ fieldset{
 .button_rev:hover{
   height: 50px;
   background-color: rgb(109, 248, 255);
-  border-radius: 30px;
+  border-radius: 15px;
   padding:10px;
   margin-left:10px;
   margin-right:10px;
@@ -220,7 +220,7 @@ text-align: center;
   position: relative;
   top:120px; 
   left:30px;
-  min-height: 60vh;
+  height: auto;
 }
 #gallery-imgs{
   position: relative;
@@ -228,11 +228,12 @@ text-align: center;
   left:60px;
   min-height: 150vh;
 }
-#rev-mid,#ser-mid{
+#ser-mid{
   position: relative;
   top:200px;
   left:100px;
 }
+
 #ser-mid{
   position: relative;
   top:150px;
@@ -249,37 +250,6 @@ text-align: center;
   position:relative;
   left:10px;
   top:50px;
-}
-
-.search-container {
-  width: 280px;
-  display: flex;
-  flex-direction: column;
-}
-
-.dropdown {
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  border: 1px solid gray;
-}
-
-.dropdown:empty {
-  border: none;
-}
-
-.dropdown-row {
-  cursor: pointer;
-  text-align: start;
-  margin: 2px 0;
-}
-
-input {
-  width: 220px;
-}
-
-.search-inner {
-  display: flex;
 }
 th,td{
   border: 1px solid black;
