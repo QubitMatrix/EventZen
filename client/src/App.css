@@ -228,6 +228,15 @@ text-align: center;
   left:60px;
   min-height: 150vh;
 }
+#about-mid{
+  position: relative;
+  top:120px; 
+  left:30px;
+  height: auto;
+}
+#about-mid>span{
+  font-size: larger;
+}
 #ser-mid{
   position: relative;
   top:200px;

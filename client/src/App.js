@@ -7,13 +7,12 @@ import {Link as StyledLink} from 'react-router-dom'
 import Codewars from './pages/codewars';
 import Hardwired from './pages/hardwired';
 import Consolejam from './pages/consolejam';
-//import Register from './pages/register';
 import Calender from './pages/calender';
 import Gallery from './pages/gallery';
-import Review from './pages/review';
 import Reviews from './pages/review';
 import Search from './pages/search';
 import Contact from './pages/contacts';
+import Info from './about';
 function App() {
     var arr=['about','search','calender','gallery','contacts','review','http://localhost:3001/register']
     var nam=["About","Search","Calender","Gallery","Contacts","Review","Register"]
@@ -81,6 +80,7 @@ function App() {
         <Footer/>
          <Routes>
             <Route exact path="/" element={<Home links={arr} names={nam} events={events}/>}/>
+            <Route path='/about' element={<Info/>}/>
             <Route path='/codewars' element={<Codewars/>}/>
             <Route path='/hardwired' element={<Hardwired/>}/>
             <Route path='/consolejam' element={<Consolejam/>}/>
