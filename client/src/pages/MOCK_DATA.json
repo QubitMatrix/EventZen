@@ -1,8 +1,24 @@
-[{"id":1,"event_name":"CodeWars","type":"#coding","link":"codewars"},
-{"id":2,"event_name":"Console Jam","type":"#gaming","link":"consolejam"},
-{"id":3,"event_name":"Hardwired","type":"#hardware","link":"hardwired"},
-{"id":4,"event_name":"Tensor","type":"#coding","link":"/"},
-{"id":5,"event_name":"CodeBlooded","type":"#coding","link":"/"},
-{"id":6,"event_name":"Robo Wars","type":"#hardware","link":"/"},
-{"id":7,"event_name":"MobiGam","type":"#gaming","link":"/"}
+[
+    { "full_name": "vegavath","link":"/search","type":"#racing" },
+    { "full_name": "wolf of wall street","link":"/search","type":"#entrepreneurship" },
+    { "full_name": "blue codes","link":"/search","type":"#coding" },
+    { "full_name": "robin hood ","link":"/search","type":"#miscellaneous" },
+    { "full_name": "idea king","link":"/search","type":"#ideathon" },
+    { "full_name": "AI-ML","link":"/search","type":"#coding"},
+    { "full_name": "robotiacs club","link":"/search","type":"#robotics" },
+    { "full_name": "liniux coders","link":"/search","type":"#coding" },
+    { "full_name": "fast club","link":"/search","type":"#miscellaneous" },
+    { "full_name": "ideathon","link":"/search","type":"#ideathon" },
+    { "full_name": "sumcoders","link":"/search","type":"#coding" },
+    { "full_name": "Reuben Beldan","link":"/search","type":"#miscellaneous" },
+    { "full_name": "Frannie Colter","link":"/search","type":"#miscellaneous" },
+    { "full_name": "Tobe Francescuccio","link":"/search","type":"#miscellaneous" },
+    {"full_name":"codewars","link":"/codewars","type":"#coding"},
+    {"full_name":"consolejam","link":"/consolejam","type":"#gaming"},
+    {"full_name":"hardwired","link":"/hardwired","type":"#hardware"},
+    {"full_name":"tensor","link":"/search","type":"#datathon"},
+    {"full_name":"codeblooded","link":"/search","type":"#coding"},
+    {"full_name":"robo wars","link":"/search","type":"#robotics"},
+    {"full_name":"mobigam","link":"/search","type":"#gaming"}
 ]
+  
