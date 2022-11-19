@@ -6,8 +6,8 @@ function Search()
   const [searchTerm,setSearchTerm]=useState('')
   return(<div id="ser-mid">
   <span>This page lets you search for an event using its name or its type and navigate to that event.</span><br/>There are three types of events:coding,hardware and gaming. Use # to search for events based on type.<br/><br/>
-  <input type="text" placeholder="search..." onChange={event=>{setSearchTerm(event.target.value)}}/>  
-  {
+  <input type="text" id="searchbar" placeholder="search..." onChange={event=>{setSearchTerm(event.target.value)}}/>  
+  <ul>{
     JSONDATA.filter((val=>{
     if(searchTerm =="")
     {
@@ -19,11 +19,12 @@ function Search()
     }
   })).map((val,key)=>{
     return( 
-      <div className="user" key={key}>
-      <a href={val.link}>{val.event_name}</a>
+      <div id="user" key={key}>
+      <li><a href={val.link}>{val.event_name}</a></li>
       </div>
     )
   })}
+  </ul>
   </div>
 )
 }
