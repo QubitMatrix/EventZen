@@ -1,6 +1,7 @@
-import React from "react";
-
+import React,{ useState, useEffect } from "react";
 console.log("in functiion.")
+
+
 
 class Items extends React.Component {
     constructor(props){
@@ -53,7 +54,7 @@ class Details extends React.Component{
       return(
       <div>
         <iframe title="rev" name="content" style={{display:"none"}}></iframe>
-  <form action='http://localhost:3001/review' method='POST' target="content">
+    <form action='http://localhost:3001/review' method='POST' target="content">
           <fieldset className="info">
           <legend> NAME:</legend> 
           <input type="text" name="name"  ref={(a) => this.ele = a}></input>
@@ -74,14 +75,50 @@ class Details extends React.Component{
     }
 }
 
-class Reviews extends React.Component{
-    render(){
-        return(
-          <div id="rev-mid">
-                <Details/>
-            </div>
-        )
-    }
-}
 
-export default Reviews;
+
+
+  
+    
+  
+  
+
+export default function Reviews(){
+    const [result, setResult] =useState([]);
+    useEffect(() => {
+    async function getRecords(){
+      const res = await fetch('/review');
+      const result= await res.json();
+      setResult(result);
+    }
+    getRecords();
+    return;
+  },[])
+    
+    
+    console.log(result)
+
+    function seeRec(){
+      return result.map((row)=>{
+        return(
+          <div>
+          <fieldset>
+            <legend><b>{row.name}</b></legend>
+            {row.comment}
+          </fieldset>
+          <br></br>
+          </div>
+        )
+      })
+    }
+      return(
+      <div id="rev-mid">
+          <Details/>
+          <div>{seeRec()}</div>
+          <br/><br/><br/><br/><br/><br/>
+      </div>
+  )}
+        
+// Reviews;
+
+
