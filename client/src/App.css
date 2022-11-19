@@ -250,11 +250,36 @@ text-align: center;
   left:10px;
   top:50px;
 }
-#events>li{
-  display: none;
+
+.search-container {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
 }
-#events>a{
-  text-decoration: none;
+
+.dropdown {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid gray;
+}
+
+.dropdown:empty {
+  border: none;
+}
+
+.dropdown-row {
+  cursor: pointer;
+  text-align: start;
+  margin: 2px 0;
+}
+
+input {
+  width: 220px;
+}
+
+.search-inner {
+  display: flex;
 }
 th,td{
   border: 1px solid black;
