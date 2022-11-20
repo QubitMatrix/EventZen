@@ -27,7 +27,7 @@ class Button extends React.Component{
 }
 class Logo extends React.Component{
     render(){
-        return <StyledLink to="/"><img id="logo" src="home.jpg" width="100" height="70"/></StyledLink>
+        return <StyledLink to="/"><img id="logo" src="home.jpg" alt="logo" width="100" height="70"/></StyledLink>
     }
 }
 class Header extends React.Component{

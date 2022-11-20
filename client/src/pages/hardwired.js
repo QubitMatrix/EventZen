@@ -1,4 +1,5 @@
 import React from 'react'
+var det=['About Hardwired','Do you see bread boards and multicolor wires and get excited to build new stuff? Then this is an event for you!!!',"vlsi-reg",'http://localhost:3001/register','Prize Details:',"First prize: Rs.3000/-","Second Prize: Rs.2000/-","Third Prize: Rs.1000/-","Participation certificates and exciting goodies for all participants.","Eligibility","Any B.Tech pursuing student can participate in the event(Any year or branch).","The participant should have a knack for circuit designing and should know atleast basic electronics","Requirements","Basic electronics knowledge","Team size of 3-5"]
 class Mid extends React.Component{
     redirect=(i)=>{
         document.location=this.props.det[i]
