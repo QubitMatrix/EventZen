@@ -17,7 +17,7 @@ export default function App() {
   return (
     <div id="ser-mid">
       <h1>Search</h1>
-      <span>This page lets you search for an event using its name or its type and navigate to that event.</span><br/>There are nine types of events:racing,entrepreneurship,coding,ideathon,hardware,robotics,datathon,gaming and miscellaneous. Use # to search for events based on type.<br/><br/>
+      <span>This page lets you search for an event using its name or its type and navigate to that event.</span><br/><span>There are nine types of events:racing,entrepreneurship,coding,ideathon,hardware,robotics,datathon,gaming and miscellaneous.</span><br/><span>Use # to search for events based on type.</span><br/><br/>
       <div className="search-container">
         <div className="search-inner">
           <input type="text" value={value} onChange={onChange} />
