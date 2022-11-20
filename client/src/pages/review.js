@@ -1,8 +1,4 @@
 import React,{ useState, useEffect } from "react";
-console.log("in functiion.")
-
-
-
 class Items extends React.Component {
     constructor(props){
       super(props)
@@ -74,15 +70,6 @@ class Details extends React.Component{
       )
     }
 }
-
-
-
-
-  
-    
-  
-  
-
 export default function Reviews(){
     const [result, setResult] =useState([]);
     useEffect(() => {
@@ -94,12 +81,9 @@ export default function Reviews(){
     getRecords();
     return;
   },[])
-    
-    
-    console.log(result)
-
-    function seeRec(){
-      return result.map((row)=>{
+console.log(result)
+function seeRec(){
+    return result.map((row)=>{
         return(
           <div>
           <fieldset>
@@ -119,6 +103,5 @@ export default function Reviews(){
       </div>
   )}
         
-// Reviews;
 
 

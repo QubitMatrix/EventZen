@@ -13,12 +13,12 @@
     { "full_name": "Reuben Beldan","link":"/search","type":"#miscellaneous" },
     { "full_name": "Frannie Colter","link":"/search","type":"#miscellaneous" },
     { "full_name": "Tobe Francescuccio","link":"/search","type":"#miscellaneous" },
-    {"full_name":"codewars","link":"/codewars","type":"#coding"},
-    {"full_name":"consolejam","link":"/consolejam","type":"#gaming"},
-    {"full_name":"hardwired","link":"/hardwired","type":"#hardware"},
-    {"full_name":"tensor","link":"/search","type":"#datathon"},
-    {"full_name":"codeblooded","link":"/search","type":"#coding"},
-    {"full_name":"robo wars","link":"/search","type":"#robotics"},
-    {"full_name":"mobigam","link":"/search","type":"#gaming"}
+    { "full_name":"codewars","link":"/codewars","type":"#coding"},
+    { "full_name":"consolejam","link":"/consolejam","type":"#gaming"},
+    { "full_name":"hardwired","link":"/hardwired","type":"#hardware"},
+    { "full_name":"tensor","link":"/search","type":"#datathon"},
+    { "full_name":"codeblooded","link":"/search","type":"#coding"},
+    { "full_name":"robo wars","link":"/search","type":"#robotics"},
+    { "full_name":"mobigam","link":"/search","type":"#gaming"}
 ]
   
