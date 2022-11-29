@@ -15,7 +15,7 @@ import Info from './pages/about';
 function App() {
 var arr=['about','search','calender','gallery','contacts','review','http://localhost:3001/register']
 var nam=["About","Search","Calendar","Gallery","Contacts","Review","Register"]
-var events=[["code-event","/codewars","codeimg","code.webp","CodeWars poster","Codewars"],["vlsi-event","/hardwired","vlsiimg","vlsi.jpg","Hardwired poster","Hardwired"],["gaming-event","/Consolejam","gamingimg","game.jpg","Console Jam poster","Console Jame"]]
+var events=[["code-event","/codewars","codeimg","code.webp","CodeWars poster","Codewars"],["vlsi-event","/hardwired","vlsiimg","vlsi.jpg","Hardwired poster","Hardwired"],["gaming-event","/Consolejam","gamingimg","game.jpg","Console Jam poster","Console Jam"]]
 class Button extends React.Component{
     render(){
         var button_set=[]
